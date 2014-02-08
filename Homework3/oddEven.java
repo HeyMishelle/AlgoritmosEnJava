@@ -12,13 +12,21 @@ public class oddEven {
 
    public static void main(String[] args) {
       
-      	System.out.println(args[0]);
+      	
 
-   		// si el numero es impar
-   			System.out.println("numero es impar");
+   		int x = Integer.parseInt(args[0].toString());
+		int residuo = 0;
+		residuo = x%2;
+		if(residuo = 0)
+		{
+			System.out.println("numero par");
+		}
+		else
+		{
+			System.out.println("numero impar");
+			
 
-   		// si el numero es par
-   			System.out.println("numero es par");
+  		}
 
    }
 }

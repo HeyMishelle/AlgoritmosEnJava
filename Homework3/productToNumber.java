@@ -16,8 +16,18 @@ public class productToNumber {
 
    public static void main(String[] args) {
    		int resultado = 0;
-   		System.out.println(args[0]);
-
+		int c = 1;
+		String mensaje = "";
+   		int x = Integer.parseInt(args[0].toString());
+		while(c<x)
+		{
+			mensaje=mensaje+" "+c+"x";
+			resultado=c*(c+1);
+			c++;
+			
+		}
+		mensaje = mensaje + "=" + resultado;
+		System.out.println(mensaje);
 
    		System.out.println("el producto es: "+resultado);
       

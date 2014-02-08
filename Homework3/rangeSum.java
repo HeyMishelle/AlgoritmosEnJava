@@ -11,10 +11,27 @@ public class rangeSum {
 
    public static void main(String[] args) {
 
-		System.out.println("limites: "+args[0]+" "+args[1]);
+		int contador = 0;
+		int x = Integer.parseInt(args[0].toString());
+		int y = Integer.parseInt(args[1].toString());
+		
+		if(x<y)
+		{
+			for(x=contador;contador<=x;contador++)
+			{	
+				System.out.println(contador);
+			}
+		}
+		else if(y<x)
+		{
+			for(y=contador;contador<=y;contador++)
+			{	
+				System.out.println(contador);
+			}
+		}
 
       
-         System.out.println("numero actual es:" );
+         System.out.println("numero actual es:" +contador);
       
    }
 

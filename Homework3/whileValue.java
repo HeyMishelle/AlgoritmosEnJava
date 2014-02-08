@@ -12,10 +12,18 @@ public class whileValue {
 
    public static void main(String[] args) {
    		int valorActual = 0;
-   		System.out.println(args[0]);
-
-   		//si valor actual < args[0]
-   			System.out.println("el valor actual es: "+valorActual);
+   		int x = Integer.parseInt(args[0].toString());
+		if (x>0)
+		{
+			while(valorActual<=x)
+			{
+   				System.out.println("el valor actual es: "+valorActual);
+				valorActual ++;
+			}
+		}
+		else{
+			System.out.println("Error. Debe ser un numero positivo");
+		}
       
    }
 
